@@ -8,7 +8,7 @@ def tf_config():
         try:
             tf.config.experimental.set_virtual_device_configuration(
                 gpus[0],
-                [tf.config.experimental.VirtualDeviceConfiguration(memory_limit=1024*12)])
+                [tf.config.experimental.VirtualDeviceConfiguration(memory_limit=1024*6)])
             logical_gpus = tf.config.experimental.list_logical_devices('GPU')
             
         except RuntimeError as e:
