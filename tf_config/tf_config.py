@@ -14,5 +14,7 @@ def tf_config():
         except RuntimeError as e:
             # Virtual devices must be set before GPUs have been initialized
             pass
+
+tf_config()
         
 
